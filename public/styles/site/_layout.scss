@@ -1,0 +1,49 @@
+#header {
+	margin-top: 0px;
+	// background-color: $main-bg;
+	.navbar-default {
+		background-color: transparent;
+		border-width: 0;
+		.navbar-nav {
+			li > a {
+				color: white;
+			}
+			.active {
+				a,
+				a:hover,
+				a:focus {
+					background-color: transparent;
+				}
+			}
+		}
+	}
+}
+
+#footer {
+	margin-top: 30px;
+	border-top: 1px solid #eeeeee;
+	padding-top: 30px;
+	color: #777777;
+}
+
+.gallery-image img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.jumbotron {
+	background-color: transparent;
+}
+
+.top-buffer {
+	margin-top: 25px;
+}
+
+.top-buffer-l {
+	margin-top: 25px;
+}
+
+.top-buffer-xl {
+	margin-top: 75px;
+}
