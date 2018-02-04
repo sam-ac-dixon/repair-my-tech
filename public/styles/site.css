@@ -5823,7 +5823,8 @@ button.close {
     display: none !important; } }
 
 #header {
-  margin-top: 0px; }
+  margin-top: 0px;
+  height: 120px; }
   #header .navbar-default {
     background-color: transparent;
     border-width: 0; }
@@ -5833,6 +5834,13 @@ button.close {
     #header .navbar-default .navbar-nav .active a:hover,
     #header .navbar-default .navbar-nav .active a:focus {
       background-color: transparent; }
+    #header .navbar-default .navbar-brand {
+      transform: translateX(-50%);
+      left: 50%;
+      position: absolute; }
+      #header .navbar-default .navbar-brand img {
+        display: block;
+        max-width: 180px; }
 
 #footer {
   margin-top: 30px;
@@ -5852,7 +5860,7 @@ button.close {
   margin-top: 25px; }
 
 .top-buffer-l {
-  margin-top: 25px; }
+  margin-top: 50px; }
 
 .top-buffer-xl {
   margin-top: 75px; }
@@ -5864,7 +5872,7 @@ body {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   -webkit-text-size-adjust: 100%;
@@ -5885,13 +5893,13 @@ body {
   border-radius: 4px;
   font-size: 15px;
   font-weight: 600;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   color: #6772e5;
   text-decoration: none;
-  transition: all .15s ease;
+  transition: all 0.15s ease;
   border-width: 0; }
   .btn.btn-primary {
-    background-color: #4EB48F;
+    background-color: #4eb48f;
     color: #fff; }
   .btn:hover {
     transform: translateY(-1px);
@@ -5905,30 +5913,57 @@ body {
 .center-block {
   float: none; }
 
-.search-form {
-  width: 100%;
-  max-width: 800px;
-  padding: 10px 0; }
-
 .form-control {
+  box-shadow: none;
   background-color: #f6f9fc;
   padding: 5px 20px 8px 13px;
+  display: block;
+  border: none;
+  outline: none;
   width: 100%;
-  height: 40px;
-  font-size: 16px; }
+  border-radius: 4px;
+  color: #32325d;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  transition: background-color 0.1s ease-in, color 0.1s ease-in; }
+
+.control-label {
+  color: #424770;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-transform: none; }
 
 .diagonal-bg {
   pointer-events: none;
   position: absolute;
-  top: -75px;
+  top: -120px;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  transform: skewY(-4deg);
+  transform: skewY(-5deg);
   transform-origin: 0;
-  background: #4EB48F;
+  background: #45dca4;
   z-index: -1; }
+  .diagonal-bg .shape {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    height: 150px; }
+    .diagonal-bg .shape.s1 {
+      top: 0;
+      left: 0;
+      width: 30%;
+      background: linear-gradient(90deg, #46e6ab, #43dda4); }
+    .diagonal-bg .shape.s3 {
+      width: 38%;
+      bottom: 325px;
+      left: auto;
+      background: linear-gradient(90deg, #43dda4, #48e6ac); }
 
 img#repairer {
   width: 80%;
@@ -5945,36 +5980,122 @@ img#repairer {
   font-weight: bold; }
 
 .main-banner {
-  padding-bottom: 100px; }
+  padding-bottom: 130px; }
 
 .bold {
   font-weight: bold; }
 
 .primary {
-  color: #4EB48F; }
+  color: #4eb48f; }
 
 .light {
-  color: #f3f3f3; }
+  color: #ffffff; }
 
 .v-line-l {
   line-height: 1.3em; }
 
+.v-line-xl {
+  line-height: 1.6em; }
+
 .highlight-primary {
   color: #c8ceff; }
 
-.featured-brands-grid img {
-  width: 80%; }
-  .featured-brands-grid img.narrower {
-    width: 50%; }
+.text-shadow {
+  text-shadow: rgba(0, 0, 0, 0.07) 0 2px 20px; }
 
-.featured-brands-grid .row {
-  display: table;
-  padding: 10px 0; }
+.font-weight-bold {
+  font-weight: bold; }
 
-.featured-brands-grid [class*="col-"] {
-  float: none;
-  display: table-cell;
-  vertical-align: middle; }
+.home-banner {
+  padding-top: 20px; }
+  .home-banner .headline {
+    text-align: center; }
+
+.featured-brands-grid {
+  margin-bottom: 40px; }
+  .featured-brands-grid .row {
+    display: table;
+    padding: 10px 0; }
+  .featured-brands-grid [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: middle; }
+  .featured-brands-grid img {
+    width: 50%;
+    margin: 0 auto;
+    float: none;
+    display: block; }
+
+.search-form-container .form-header {
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 20px 10px;
+  text-align: center;
+  border-bottom: 2px solid #f6f9fc;
+  font-weight: bold;
+  color: #d09235; }
+
+.search-form-container #search-form {
+  border-radius: 4px;
+  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
+  background: #fdfdfd; }
+  .search-form-container #search-form .inputs {
+    padding: 20px 15px; }
+  .search-form-container #search-form .btn {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    border-radius: 0 0 5px 5px;
+    background: #f6f9fc;
+    display: block;
+    color: #32325d;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    transition: background 0.15s ease; }
+
+.circle {
+  background: #fcba85;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%; }
+
+.selling-point {
+  text-align: center;
+  margin-top: -60px; }
+  .selling-point .card {
+    border-radius: 5px;
+    background-color: #f7f9fc;
+    padding: 20px;
+    color: #32325d; }
+    .selling-point .card .circle {
+      width: 70px;
+      height: 70px;
+      display: block;
+      margin: 0 auto 10px;
+      padding-top: 15px; }
+      .selling-point .card .circle img {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 0 auto; }
+    .selling-point .card h3 {
+      color: #32325d;
+      font-weight: bold;
+      font-size: 20px; }
+    .selling-point .card p {
+      font-size: 16px;
+      padding: 10px 50px; }
+
+@media (min-width: 992px) {
+  .home-banner .headline {
+    text-align: right; }
+  .featured-brands-grid img {
+    width: 50%;
+    float: right; }
+  .search-form-container {
+    padding: 30px 80px; } }
 
 .badge {
   background: rgba(255, 14, 14, 0.37);

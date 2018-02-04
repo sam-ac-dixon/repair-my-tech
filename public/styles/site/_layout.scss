@@ -1,5 +1,6 @@
 #header {
 	margin-top: 0px;
+	height: 120px;
 	// background-color: $main-bg;
 	.navbar-default {
 		background-color: transparent;
@@ -14,6 +15,15 @@
 				a:focus {
 					background-color: transparent;
 				}
+			}
+		}
+		.navbar-brand {
+			transform: translateX(-50%);
+			left: 50%;
+			position: absolute;
+			img {
+				display: block;
+				max-width: 180px;
 			}
 		}
 	}
@@ -41,7 +51,7 @@
 }
 
 .top-buffer-l {
-	margin-top: 25px;
+	margin-top: 50px;
 }
 
 .top-buffer-xl {

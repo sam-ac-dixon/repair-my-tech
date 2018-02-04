@@ -2,11 +2,12 @@
 < default}} <div class="col-md-12">
 	<div class="row main-banner">
 		<div class="diagonal-bg">
-			{{!-- <div class="shape s1"></div>
-			<div class="shape s2"></div>
+			<div class="shape s1"></div>
+			{{!-- <div class="shape s2"></div> --}}
 			<div class="shape s3"></div>
-			<div class="shape s4"></div> --}}
+			{{!-- <div class="shape s4"></div> --}}
 		</div>
+		{{!--
 		<div class="container">
 			<form class="search-form center-block floating">
 				<div class="form-row align-items-center">
@@ -25,53 +26,84 @@
 					</div>
 				</div>
 			</form>
-		</div>
-		<div class="container top-buffer-xl">
+		</div> --}}
+		<div class="container home-banner">
 			<div class="row">
-				<div class="col-md-7">
+				<div class="col-md-6">
 					<div class="row">
 						<div class="col-md-12">
-							<h2 class="v-line-l primary">Find a local technician to repair your PC, laptop or mobile phone</h2>
+							<h2 class="v-line-xl font-weight-bold light text-shadow headline">Find a local technician to repair your PC, laptop or mobile phone</h2>
 						</div>
 					</div>
-					{{!-- <div class="featured-brands-grid top-buffer">
+					<div class="featured-brands-grid top-buffer">
 						<div class="row">
-							<div class="col-xs-3">
-								<img class="narrower" src="/images/apple-logo.svg">
+							<div class="col-xs-4">
+								<img src="/images/apple-logo.svg">
 							</div>
-							<div class="col-xs-3">
-								<img src="/images/samsung-logo.svg">
+							<div class="col-xs-4">
+								<img src="/images/android-logo.svg">
 							</div>
-							<div class="col-xs-3">
-								<img src="/images/dell-logo.svg">
-							</div>
-							<div class="col-xs-3">
-								<img src="/images/microsoft-logo.svg">
+							<div class="col-xs-4">
+								<img src="/images/windows-logo.svg">
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-xs-3">
-								<img src="/images/lenovo-logo.svg">
-							</div>
-							<div class="col-xs-3">
-								<img src="/images/asus-logo.svg">
-							</div>
-							<div class="col-xs-3">
-								<img class="narrower" src="/images/hp-logo.svg">
-							</div>
-							<div class="col-xs-3">
-								<img src="/images/htc-logo.svg">
-							</div>
-						</div>
-					</div> --}}
-					{{!-- <div class="row top-buffer">
+					</div>
+					{{!--
+					<div class="row top-buffer">
 						<div class="col-md-12">
 							<span class="badge badge-secondary">Plus many more brands</span>
 						</div>
 					</div> --}}
 				</div>
-				<div class="col-md-5">
-					{{!-- <img id="repairer" src="/images/repairer.png"> --}}
+				<div class="col-md-6 search-form-container">
+					<div id="search-form">
+						<div class="form-header">
+							Request a Quote
+						</div>
+						<form class="form-horizontal" method="post">
+							<div class="inputs">
+								<div class="form-group ">
+									<label class="control-label col-sm-4 requiredField" for="select">
+										Device
+									</label>
+									<div class="col-sm-8">
+										<select class="select form-control" id="select" name="select">
+											<option value="Mobile Phone">
+												Mobile Phone
+											</option>
+											<option value="Tablet">
+												Tablet
+											</option>
+											<option value="Laptop">
+												Laptop
+											</option>
+											<option value="Personal Computer">
+												Personal Computer
+											</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group ">
+									<label class="control-label col-sm-4 requiredField" for="name">
+										Postcode
+									</label>
+									<div class="col-sm-8">
+										<input class="form-control" id="name" name="name" type="text" />
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<button class="btn" name="submit" type="submit">
+										Search
+									</button>
+								</div>
+							</div>
+						</form>
+						{{!--
+						<img id="repairer" src="/images/repairer.png"> --}}
+
+					</div>
 				</div>
 			</div>
 		</div>
@@ -79,44 +111,60 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
-				<h3>Find</h3>
-				<p>We'll help you locate repair technicians in your area</p>
+			<div class="col-md-4 selling-point">
+				<div class="card">
+					<div class="circle">
+						<img src="/images/find-icon.svg">
+					</div>
+					<h3>Find</h3>
+					<p>We'll help you locate repair technicians in your area</p>
+				</div>
 			</div>
-			<div class="col-md-4">
-				<h3>Fast</h3>
-				<p>Same day and one hour services available for most devices</p>
+			<div class="col-md-4 selling-point">
+				<div class="card">
+					<div class="circle">
+						<img src="/images/fast-icon.svg">
+					</div>
+					<h3>Fast</h3>
+					<p>Same day and one hour services available for most devices</p>
+				</div>
 			</div>
-			<div class="col-md-4">
-				<h3>Affordable</h3>
-				<p>Find the price that's right for you</p>
+			<div class="col-md-4 selling-point">
+				<div class="card">
+					<div class="circle">
+						<img src="/images/affordable-icon.svg">
+					</div>
+					<h3>Affordable</h3>
+					<p>Find the price that's right for you</p>
+				</div>
 			</div>
 		</div>
-		{{!--
-		<div class="jumbotron">
-			<img src="/images/logo.svg" width="160">
-			<h1>Welcome</h1>
-			<p>This is your new
-				<a href='http://keystonejs.com' target='_blank'>KeystoneJS</a> website.</p>
-			<p>
-				It includes the latest versions of
-				<a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>
-				and
-				<a href='http://www.jquery.com/' target='_blank'>jQuery</a>.
-			</p>
-			<p>Visit the
-				<a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a> guide to learn how to customise it.</p>
-			<hr>
-			<p>We have created a default Admin user for you with the email
-				<strong>samacdixon@gmail.com</strong> and the password
-				<strong>admin</strong>.</p>
-			<p>
-				<a href="/keystone/signin" style="margin-right: 10px" class="btn btn-lg btn-primary">Sign in</a> to use the Admin UI.</p>
-			<hr>
-			<p>
-				Remember to
-				<a href='https://github.com/keystonejs/keystone' target='_blank'>Star KeystoneJS on GitHub</a> and
-				<a href='https://twitter.com/keystonejs' target='_blank'>follow @keystonejs</a> on twitter for updates.
-			</p>
-		</div> --}}
+	</div>
+	{{!--
+	<div class="jumbotron">
+		<img src="/images/logo.svg" width="160">
+		<h1>Welcome</h1>
+		<p>This is your new
+			<a href='http://keystonejs.com' target='_blank'>KeystoneJS</a> website.</p>
+		<p>
+			It includes the latest versions of
+			<a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>
+			and
+			<a href='http://www.jquery.com/' target='_blank'>jQuery</a>.
+		</p>
+		<p>Visit the
+			<a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a> guide to learn how to customise it.</p>
+		<hr>
+		<p>We have created a default Admin user for you with the email
+			<strong>samacdixon@gmail.com</strong> and the password
+			<strong>admin</strong>.</p>
+		<p>
+			<a href="/keystone/signin" style="margin-right: 10px" class="btn btn-lg btn-primary">Sign in</a> to use the Admin UI.</p>
+		<hr>
+		<p>
+			Remember to
+			<a href='https://github.com/keystonejs/keystone' target='_blank'>Star KeystoneJS on GitHub</a> and
+			<a href='https://twitter.com/keystonejs' target='_blank'>follow @keystonejs</a> on twitter for updates.
+		</p>
+	</div> --}}
 	</div>
